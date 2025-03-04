@@ -1,7 +1,6 @@
 @font-face {
     src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
-        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff");
 
     font-family: 'Forma';
     font-style: normal;
@@ -34,7 +33,7 @@ grid-template-areas:
 grid-area: h;
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
@@ -57,9 +56,9 @@ h3{
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 8, "wght" 1, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{font-variation-settings: "opsz" 72, "wght" 900, "slnt" -13;
     }
     
 }
