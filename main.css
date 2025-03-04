@@ -1,0 +1,91 @@
+@font-face {
+    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
+         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
+        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+
+    font-family: 'Forma';
+    font-style: normal;
+    font-weight: normal;
+    }
+    
+    body{
+    background-color: lightsteelblue;
+    font-family: 'Forma';
+}
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    width: min(100% - 3rem, 80ch);
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+.alphabet {
+grid-area: a;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: gray;
+}
+
+/* variable font animation */
+h3{
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: weightChange 7s infinite;
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    }
+    
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+
