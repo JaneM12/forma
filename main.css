@@ -25,19 +25,21 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h v"
+    "v h"
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
+background-color:red;
 }
 
 #variations{
 grid-area: v;
+background-color:black;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
