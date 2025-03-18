@@ -31,6 +31,10 @@ grid-template-areas:
     "c";
 }
 
+#axis {
+grid-area: a;
+background-color: none;
+}
 #history {
 grid-area: h;
 background-color: none;
@@ -39,15 +43,10 @@ background-color: none;
 #variations{
 grid-area: v;
 background-color: none;
-
-}
-
-#alphabet {
-grid-area: a;
 }
 
 #characters {
-grid-area: a;
+grid-area: c;
 }
 }
 /* CSS for the footer */
