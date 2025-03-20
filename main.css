@@ -24,7 +24,10 @@ h3 {
     font-size: 13.889vw;
    }
 h2 {
-    font-size: 17.316vw;
+    font-size: 17.361vw;
+   }
+h1 {
+    font-size: 17.361vw;
    }
 
 /* how the page wrapper will appear on mobile */
@@ -50,7 +53,7 @@ text-align: center;
 background-color: none;
 }
 .axis_title {
-color:blue; 
+color:#236F95; 
 font-variation-settings: "opsz" 52, "wght" 400, "slnt" -13;
 }
 
@@ -59,7 +62,15 @@ grid-area: h;
 background-color: none;
 column-gap: 5vw;
 }
-.history_title
+.history_title_1 {
+margin-top: 0%;
+margin-bottom: 0px;
+background-color: #2D86B1;
+}
+.history_title_2 {
+    margin-bottom: 0px;
+    margin-top: 0%;
+    }
 .history_text {
     column-count: 2;
 }
@@ -81,6 +92,7 @@ font-size: 6vw;
 #characters {
 background-image: url('images/characters_background.svg');
 grid-area: c;
+fill: 100%;
 }
 }
 /* CSS for the footer */
@@ -134,7 +146,6 @@ footer{
 h1{
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
     animation: weightChange 7s infinite;
 }
 
@@ -198,7 +209,7 @@ h1{
             font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0, "wdth" 50;
             transform: scaleX(1);
         }
-        50%{font-variation-settings: "wght" 200, "opsz" 8, "slnt" 0, "wdth" 100;
+        50%{font-variation-settings: "wght" 300, "opsz" 8, "slnt" 0, "wdth" 100;
             transform: scaleX(.5);
         }
 
