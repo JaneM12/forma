@@ -90,7 +90,11 @@ font-size: 6vw;
 }
 
 #characters {
+letter-spacing: 0.1vw;
 background-image: url('images/characters_background.svg');
+/* background-repeat: no-repeat; */
+background-size: cover;
+height:1150px;
 grid-area: c;
 fill: 100%;
 }
@@ -113,13 +117,13 @@ footer{
     column-count: 1;
     text-align: center;
     color: white;
-}
+}}
   
  /* download button section */
  .download_section {
     background-color: white;
-    text-align: center;
- }
+    text-align: center;}
+
  .download {
     font-size: 6.944vw; 
     display: inline-block;
@@ -140,7 +144,6 @@ footer{
     background-color: #236F95;
     color: #fff;
  }
-}
 
 /* variable font animation */
 h1{
