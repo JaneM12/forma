@@ -11,6 +11,22 @@
     background-color: white;
     font-family: 'Forma';
 }
+h6 {
+    font-size: 3.472vw;
+   }
+h5 {
+    font-size: 8.333vw;
+   }
+h4 {
+    font-size: 10.417vw;
+   }
+h3 {
+    font-size: 13.889vw;
+   }
+h2 {
+    font-size: 17.316vw;
+   }
+
 /* how the page wrapper will appear on mobile */
 
 /* how the page wrapper appears on desktop */
@@ -30,17 +46,22 @@ grid-template-areas:
 
 #axis {
 grid-area: a;
+text-align: center;
 background-color: none;
 }
 .axis_title {
-color:blue  
+color:blue; 
+font-variation-settings: "opsz" 52, "wght" 400, "slnt" -13;
 }
 
 #history {
 grid-area: h;
 background-color: none;
-column-count: 2;
 column-gap: 5vw;
+}
+.history_title
+.history_text {
+    column-count: 2;
 }
 
 #variations{
@@ -67,12 +88,14 @@ footer{
     background-color: #2D86B1;
 .footer_text {
     column-count: 2;
+    vertical-align: top;
     color: white;
     font-size: 2.5vw;
     text-align: left;
     padding: 2%; 
     margin-left: 5vw;
     margin-top: 0vw;
+    margin-bottom: 0vw;
 }
 .footer_title {
     column-count: 1;
@@ -86,6 +109,7 @@ footer{
     text-align: center;
  }
  .download {
+    font-size: 6.944vw; 
     display: inline-block;
     text-decoration: none;
     border: none;
@@ -94,7 +118,6 @@ footer{
     padding: 0px 0px;
     margin:5%;
     border-radius: 0px;
-    font-size: 6vw;
     background-color: transparent;
     color: #236F95;
     border: 1vw solid #236F95;
@@ -108,7 +131,7 @@ footer{
 }
 
 /* variable font animation */
-h3{
+h1{
     font-weight:20; 
     text-align: center;
     font-size: 5em;
@@ -123,6 +146,64 @@ h3{
     }
     
 }
+/* animations for the Axis section */
+
+.slant {
+    animation: slantChange 3s infinite;
+    margin: 0%;
+    padding: 0%;
+    }
+
+    @keyframes slantChange {
+        0%, 100%{
+            font-variation-settings: "wght" 100, "slnt" 0, "opsz" 8;
+        }
+        50%{font-variation-settings: "wght" 100, "slnt" -13, "opsz" 8;}
+
+    }
+.weight {
+    animation: variation-WeightChange 3s infinite;
+    margin: 0%;
+    padding: 0%;
+    }
+
+    @keyframes variation-WeightChange {
+        0%, 100%{
+            font-variation-settings: "wght" 1, "opsz" 8, "slnt" 0;
+        }
+        50%{font-variation-settings: "wght" 900, "opsz" 8, "slnt" 0;}
+
+    }
+.optical_size {
+    animation: optical-sizeChange 3s infinite;
+    margin: 0%;
+    padding: 0%;
+    }
+
+    @keyframes optical-sizeChange {
+        0%, 100%{
+            font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0;
+        }
+        50%{font-variation-settings: "wght" 100, "opsz" 72, "slnt" 0}
+
+    }
+.width {
+    animation: widthChange 3s infinite;
+    margin: 0%;
+    padding: 0%;
+    }
+
+    @keyframes widthChange {
+        0%, 100%{
+            font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0, "wdth" 50;
+            transform: scaleX(1);
+        }
+        50%{font-variation-settings: "wght" 200, "opsz" 8, "slnt" 0, "wdth" 100;
+            transform: scaleX(.5);
+        }
+
+    }
+
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
