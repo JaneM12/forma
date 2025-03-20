@@ -12,17 +12,14 @@
     font-family: 'Forma';
 }
 /* how the page wrapper will appear on mobile */
-.page-wrapper{
-    width: min(100% - 3rem, 80ch);
-    margin-inline: auto;
-}
+
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
+grid-gap: 0px;
+grid-template-columns: 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
     "v" 
@@ -35,17 +32,33 @@ grid-template-areas:
 grid-area: a;
 background-color: none;
 }
+.axis_title {
+color:blue  
+}
+
 #history {
 grid-area: h;
 background-color: none;
+column-count: 2;
+column-gap: 5vw;
 }
 
 #variations{
 grid-area: v;
 background-color: none;
+text-wrap: wrap;
+width: 100%;
+
+}
+.repeat {
+margin: 0;
+padding: 0;
+color: blue;
+font-size: 6vw;
 }
 
 #characters {
+background-image: url('images/characters_background.svg');
 grid-area: c;
 }
 }
@@ -53,17 +66,23 @@ grid-area: c;
 footer{
     background-color: #2D86B1;
 .footer_text {
+    column-count: 2;
     color: white;
-    padding: 20px;
-    font-size: 1.2em;
-    text-align: center;
+    font-size: 2.5vw;
+    text-align: left;
+    padding: 2%; 
+    margin-left: 5vw;
+    margin-top: 0vw;
 }
+.footer_title {
+    column-count: 1;
+    text-align: center;
+    color: white;
 }
   
  /* download button section */
  .download_section {
     background-color: white;
-    margin: left 80px;
     text-align: center;
  }
  .download {
@@ -73,13 +92,12 @@ footer{
     outline: none;
     cursor: pointer;
     padding: 0px 0px;
-    margin:60px;
+    margin:5%;
     border-radius: 0px;
-    font-size: 100px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vw;
     background-color: transparent;
     color: #236F95;
-    border: 10px solid #236F95;
+    border: 1vw solid #236F95;
     transition: all 0.3s ease;
     padding: 0px 5px;
  }
