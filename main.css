@@ -48,6 +48,12 @@ grid-template-areas:
 }
 
 #axis {
+    background-image: url('images/axis_background.svg');
+    margin: 0vw;
+    background-size: cover;
+    height:99vw;
+    grid-area: c;
+    fill: 100%;
 grid-area: a;
 text-align: center;
 background-color: none;
@@ -58,6 +64,12 @@ font-variation-settings: "opsz" 52, "wght" 400, "slnt" -13;
 }
 
 #history {
+    background-image: url('images/history_background.svg');
+    margin: 0vw;
+    background-size: cover;
+    height:99vw;
+    grid-area: c;
+    fill: 100%;
 grid-area: h;
 background-color: none;
 column-gap: 5vw;
@@ -65,7 +77,6 @@ column-gap: 5vw;
 .history_title_1 {
 margin-top: 0%;
 margin-bottom: 0px;
-background-color: #2D86B1;
 }
 .history_title_2 {
     margin-bottom: 0px;
@@ -75,12 +86,15 @@ background-color: #2D86B1;
     column-count: 2;
 }
 
-#variations{
-grid-area: v;
-background-color: none;
-text-wrap: wrap;
-width: 100%;
-
+#variations {
+    background-image: url('images/characters_background.svg');
+    /* background-repeat: no-repeat; */
+    background-color: rgb(255, 0, 0);
+    margin: 0vw;
+    background-size: cover;
+    height:99vw;
+    grid-area: c;
+    fill: 100%;
 }
 .repeat {
 margin: 0;
@@ -91,10 +105,12 @@ font-size: 6vw;
 
 #characters {
 letter-spacing: 0.1vw;
+background-color: blue;
 background-image: url('images/characters_background.svg');
 /* background-repeat: no-repeat; */
+margin: 0vw;
 background-size: cover;
-height:1150px;
+height:99vw;
 grid-area: c;
 fill: 100%;
 }
@@ -209,10 +225,10 @@ h1{
 
     @keyframes widthChange {
         0%, 100%{
-            font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0, "wdth" 50;
+            font-variation-settings: "wght" 100, "opsz" 8, "slnt" 0;
             transform: scaleX(1);
         }
-        50%{font-variation-settings: "wght" 300, "opsz" 8, "slnt" 0, "wdth" 100;
+        50%{font-variation-settings: "wght" 300, "opsz" 8, "slnt" 0;
             transform: scaleX(.5);
         }
 
