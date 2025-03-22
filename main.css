@@ -8,14 +8,19 @@
     }
     
     body{
+        margin-top: 30vw;
+        background-image: url('images/full_background.svg');
+        background-repeat: no-repeat;
+        /* margin: 0vw; */
+        background-size: cover;
+        grid-area: c;
+        fill: 100vw;
+        height: 100vw;
     background-color: white;
     font-family: 'Forma';
 }
 h6 {
-    font-size: 3.472vw;
-   }
-h5 {
-    font-size: 8.333vw;
+    font-size: 2vw;
    }
 h4 {
     font-size: 10.417vw;
@@ -25,19 +30,27 @@ h3 {
    }
 h2 {
     font-size: 17.361vw;
+    margin: 0vw;
    }
 h1 {
     font-size: 17.361vw;
+    font-weight:20; 
+    text-align: left;
+    animation: weightChange 7s infinite;
+    margin-bottom: 3vw;
+   }
+p {
+    font-size: 1.5vw;
    }
 
 /* how the page wrapper will appear on mobile */
 
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){ */
 .page-wrapper{
 display: grid;
-grid-gap: 0px;
+grid-gap: 0vw;
 grid-template-columns: 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
@@ -47,28 +60,33 @@ grid-template-areas:
     "c";
 }
 
+#hero_section {
+text-align: left;
+margin-left: 4vw;
+margin-top:40vw;
+margin-bottom: 0vw;
+}
+
 #axis {
-    background-image: url('images/axis_background.svg');
-    margin: 0vw;
-    background-size: cover;
-    height:99vw;
-    grid-area: c;
-    fill: 100%;
-grid-area: a;
-text-align: center;
-background-color: none;
+    grid-area: a;
+    text-align: center;
+    margin-bottom: 15.3vw;
 }
 .axis_title {
 color:#236F95; 
-font-variation-settings: "opsz" 52, "wght" 400, "slnt" -13;
+font-variation-settings: "opsz" 52, "wght" 350, "slnt" -13;
+letter-spacing: .3vw;
+margin-bottom: 0vw;
 }
-
+.axis_description {
+    margin-top: 0vw;
+    margin-bottom: 15vw;
+    color: #2D86B1;
+}
 #history {
-    background-image: url('images/history_background.svg');
     margin: 0vw;
     background-size: cover;
-    height:99vw;
-    grid-area: c;
+    grid-area: h;
     fill: 100%;
 grid-area: h;
 background-color: none;
@@ -76,26 +94,35 @@ column-gap: 5vw;
 }
 .history_title_1 {
 margin-top: 0%;
-margin-bottom: 0px;
+margin-bottom: 0vw;
+color: white;
+font-variation-settings: "opsz" 43, "wght" 900, "slnt" -13;
 }
 .history_title_2 {
-    margin-bottom: 0px;
-    margin-top: 0%;
+    margin-bottom: -1vw;
+    margin-top: -9vw;
+    margin-right: 0vw;
+    margin-left: -1vw;
+    font-variation-settings: "opsz" 72, "wght" 900, "slnt" 0;
+    color: #2D86B1;
     }
 .history_text {
     column-count: 2;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
 }
 
-#variations {
-    background-image: url('images/characters_background.svg');
-    /* background-repeat: no-repeat; */
-    background-color: rgb(255, 0, 0);
-    margin: 0vw;
-    background-size: cover;
-    height:99vw;
-    grid-area: c;
+#Variations{
+    font-size: 7vw;
+    letter-spacing: 0.1vw;
+    margin-top: 6vw;
+    margin-left: 3.5vw;
+    margin-bottom: 27vw;
+    grid-area: v;
     fill: 100%;
-}
+    color: #2D86B1;
+    font-variation-settings: "opsz" 52, "wght" 400, "slnt" -4;}
+
 .repeat {
 margin: 0;
 padding: 0;
@@ -105,19 +132,25 @@ font-size: 6vw;
 
 #characters {
 letter-spacing: 0.1vw;
-background-color: blue;
-background-image: url('images/characters_background.svg');
-/* background-repeat: no-repeat; */
-margin: 0vw;
+margin-top: 15vw;
+margin-left:25vw;
+margin-bottom: 17vw;
 background-size: cover;
-height:99vw;
 grid-area: c;
 fill: 100%;
 }
+.characters_title {
+    margin-left:-8vw;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5vw;
+    letter-spacing: .5vw;
+    font-variation-settings: "opsz" 72, "wght" 500, "slnt" 0;
 }
+
 /* CSS for the footer */
 footer{
     background-color: #2D86B1;
+    margin-top: 0vw;
 .footer_text {
     column-count: 2;
     vertical-align: top;
@@ -126,7 +159,6 @@ footer{
     text-align: left;
     padding: 2%; 
     margin-left: 5vw;
-    margin-top: 0vw;
     margin-bottom: 0vw;
 }
 .footer_title {
@@ -137,6 +169,7 @@ footer{
   
  /* download button section */
  .download_section {
+    fill: 100%;
     background-color: white;
     text-align: center;}
 
@@ -147,14 +180,14 @@ footer{
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0px 0px;
-    margin:5%;
+    padding: 0vw 0vw;
+    margin:5vw;
     border-radius: 0px;
     background-color: transparent;
     color: #236F95;
     border: 1vw solid #236F95;
     transition: all 0.3s ease;
-    padding: 0px 5px;
+    padding: 0vw .5vw;
  }
  .download:hover {
     background-color: #236F95;
@@ -162,11 +195,7 @@ footer{
  }
 
 /* variable font animation */
-h1{
-    font-weight:20; 
-    text-align: center;
-    animation: weightChange 7s infinite;
-}
+
 
 @keyframes weightChange {
     0%, 100%{
@@ -180,8 +209,10 @@ h1{
 
 .slant {
     animation: slantChange 3s infinite;
+    color: #236F95;
     margin: 0%;
     padding: 0%;
+    margin-right:20vw;
     }
 
     @keyframes slantChange {
@@ -193,7 +224,10 @@ h1{
     }
 .weight {
     animation: variation-WeightChange 3s infinite;
-    margin: 0%;
+    color: white;
+    margin-right:35vw;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding: 0%;
     }
 
@@ -206,7 +240,10 @@ h1{
     }
 .optical_size {
     animation: optical-sizeChange 3s infinite;
-    margin: 0%;
+    color: #236F95;
+    margin-right:5vw;
+    margin-top: 0%;
+    margin-bottom: 0%;
     padding: 0%;
     }
 
@@ -219,6 +256,7 @@ h1{
     }
 .width {
     animation: widthChange 3s infinite;
+    color: white;
     margin: 0%;
     padding: 0%;
     }
@@ -237,7 +275,7 @@ h1{
 /* variable font that changes on hover */
 .variable-font{
     font-weight:1 ;
-    height:100vh;
+    height:100vw;
     font-size: 10em;
     display:grid;
     place-content: center;
@@ -251,7 +289,7 @@ h1{
 
 .variable-font:hover{
     font-weight:500 ;
-    height:100vh;
+    height:100vw;
     font-size: 7em;
     display:grid;
     place-content: center;
