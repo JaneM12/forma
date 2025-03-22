@@ -215,14 +215,14 @@ fill: 100%;
     margin-top: 0vw;
     margin-bottom: 0vw;
     color: #1e6386;
-    font-size: 4vw;
+    font-size: 3vw;
     overflow-wrap: break-word;
     width: 60vw;
 }
 .characters_title {
     margin-left:-8vw;
     color: rgb(255, 255, 255);
-    margin-bottom: 3.5vw;
+    margin-bottom: 5vw;
     letter-spacing: .5vw;
     font-size: 10.4vw;
     font-variation-settings: "opsz" 72, "wght" 500, "slnt" 0;
