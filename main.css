@@ -9,6 +9,7 @@
     
     body{
         -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
         -moz-osx-font-smoothing: grayscale;
         margin-top: 30vw;
         background-image: url('images/full_background.svg');
@@ -70,6 +71,7 @@ margin-bottom: 0vw;
 }
 
 #axis {
+    margin-top: -21.5vw;
     grid-area: a;
     text-align: center;
     margin-bottom: 17.3vw;
@@ -114,7 +116,6 @@ transition: all 0.3s ease;
     margin-right: 0vw;
     margin-left: -1vw;
     transition: all 0.3s ease;
-    font-variation-settings: "opsz" 72, "wght" 900, "slnt" 0;
     color: #2D86B1;
     }
 
@@ -124,29 +125,88 @@ transition: all 0.3s ease;
     margin-left: 2.5vw;
 }
 
+.forma_container:hover{
+
+}
 #Variations{
     font-size: 7vw;
     letter-spacing: 0.1vw;
-    margin-top: 6vw;
+    margin-top: 5vw;
     margin-left: 3.5vw;
-    margin-bottom: 27vw;
+    margin-bottom: 0vw;
     grid-area: v;
     fill: 100%;
     color: #2D86B1;
     font-variation-settings: "opsz" 52, "wght" 400, "slnt" -4;}
-
-.repeat {
-margin: 0;
-padding: 0;
-color: blue;
-font-size: 6vw;
+.forma_container {
+   font-size: 8.681vw;
+   color: white;
+   margin: 0vw;
+   margin-top: -10vw;
+   margin-right: 5vw;
+   text-align: center;
+   animation: ease-in-out 3s;
+}
+.thin {
+    font-variation-settings: "opsz" 20, "wght" 100, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: 0vw;
+    transition: all 0.3s ease;
+}
+.thin:hover{
+    font-variation-settings: "opsz" 20, "wght" 100, "slnt" -13;
+        }
+.light {
+    font-variation-settings: "opsz" 10, "wght" 180, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: -11vw;
+    transition: all 0.3s ease;
+}
+.light:hover{
+    font-variation-settings: "opsz" 40, "wght" 180, "slnt" -13;
+}
+.regular {
+    font-variation-settings: "opsz" 10, "wght" 360, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: -11vw;
+    transition: all 0.3s ease;
+}
+.regular:hover{
+    font-variation-settings: "opsz" 72, "wght" 360, "slnt" -13;
+}
+.semibold {
+    font-variation-settings: "opsz" 20, "wght" 540, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: -11vw;
+    transition: all 0.3s ease;
+}
+.semibold:hover{
+    font-variation-settings: "opsz" 40, "wght" 540, "slnt" -13;
+}
+.bold {
+    font-variation-settings: "opsz" 20, "wght" 720, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: -11vw;
+    transition: all 0.3s ease;
+}
+.bold:hover{
+    font-variation-settings: "opsz" 20, "wght" 720, "slnt" -13;
+}
+.black {
+    font-variation-settings: "opsz" 20, "wght" 900, "slnt" 0;
+    font-size: 8.681vw;
+    margin-top: -11vw;
+    transition: all 0.3s ease;
+}
+.black:hover{
+    font-variation-settings: "opsz" 20, "wght" 900, "slnt" -13;
 }
 
 #characters {
 letter-spacing: 0.1vw;
 margin-top: 10vw;
 margin-left:25vw;
-margin-bottom: 0vw;
+margin-bottom: 2vw;
 background-size: cover;
 grid-area: c;
 fill: 100%;
@@ -155,7 +215,9 @@ fill: 100%;
     margin-top: 0vw;
     margin-bottom: 0vw;
     color: #2D86B1;
-    font-size: 10vw;
+    font-size: 4vw;
+    overflow-wrap: break-word;
+    width: 60vw;
 }
 .characters_title {
     margin-left:-8vw;
@@ -164,27 +226,32 @@ fill: 100%;
     letter-spacing: .5vw;
     font-size: 10.4vw;
     font-variation-settings: "opsz" 72, "wght" 500, "slnt" 0;
+    transition: all 0.3s ease;
+}
+.characters_title:hover {
+    font-variation-settings: "opsz" 10, "wght" 500, "slnt" 0;
 }
 
 /* CSS for the footer */
 footer{
     background-color: #2D86B1;
-    padding-top: .1vw;
+    padding-top: 2vw;
 }
 .footer_text {
     column-count: 2;
     vertical-align: top;
     color: white;
+    margin-top: 0vw;
     font-size: 2.5vw;
     text-align: left;
-    padding: 2%;
-    margin-bottom: 0vw;
 }
 .footer_title {
     column-count: 1;
     text-align: center;
     color: white;
     font-size: 4vw;
+    margin-bottom: 2vw;
+    margin-top: 0vw;
 }
   
  /* download button section */
@@ -217,7 +284,6 @@ footer{
  }
 
 /* variable font animation */
-
 
 @keyframes weightChange {
     0%, 100%{
