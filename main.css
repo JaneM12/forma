@@ -236,23 +236,22 @@ fill: 100%;
 footer{
     background-color: #2D86B1;
     padding-top: 2vw;
-}
-.footer_text {
-    column-count: 2;
-    vertical-align: top;
-    color: white;
-    margin-top: 0vw;
-    font-size: 2.5vw;
-    text-align: left;
+    text-align: center;
+    color:white;
+    padding-bottom: 2vw;
 }
 .footer_title {
     column-count: 1;
-    text-align: center;
     color: white;
     font-size: 4vw;
     margin-bottom: 2vw;
     margin-top: 0vw;
 }
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;}
   
  /* download button section */
  .download_section {
