@@ -8,6 +8,8 @@
     }
     
     body{
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         margin-top: 30vw;
         background-image: url('images/full_background.svg');
         background-repeat: no-repeat;
@@ -29,7 +31,7 @@ h3 {
     font-size: 13.889vw;
    }
 h2 {
-    font-size: 17.361vw;
+    font-size: 15.361vw;
     margin: 0vw;
    }
 h1 {
@@ -40,7 +42,7 @@ h1 {
     margin-bottom: 3vw;
    }
 p {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
    }
 
 /* how the page wrapper will appear on mobile */
@@ -70,14 +72,20 @@ margin-bottom: 0vw;
 #axis {
     grid-area: a;
     text-align: center;
-    margin-bottom: 15.3vw;
+    margin-bottom: 17.3vw;
 }
 .axis_title {
 color:#236F95; 
 font-variation-settings: "opsz" 52, "wght" 350, "slnt" -13;
 letter-spacing: .3vw;
+transition: all 0.3s ease;
 margin-bottom: 0vw;
 }
+.axis_title:hover {
+    font-variation-settings: "opsz" 10, "wght" 350, "slnt" -13;
+    color: #3b95c2;
+}
+    
 .axis_description {
     margin-top: 0vw;
     margin-bottom: 15vw;
@@ -97,15 +105,19 @@ margin-top: 0%;
 margin-bottom: 0vw;
 color: white;
 font-variation-settings: "opsz" 43, "wght" 900, "slnt" -13;
+transition: all 0.3s ease;
 }
+
 .history_title_2 {
     margin-bottom: -1vw;
-    margin-top: -9vw;
+    margin-top: -8.2vw;
     margin-right: 0vw;
     margin-left: -1vw;
+    transition: all 0.3s ease;
     font-variation-settings: "opsz" 72, "wght" 900, "slnt" 0;
     color: #2D86B1;
     }
+
 .history_text {
     column-count: 2;
     margin-right: 2.5vw;
@@ -132,47 +144,57 @@ font-size: 6vw;
 
 #characters {
 letter-spacing: 0.1vw;
-margin-top: 15vw;
+margin-top: 10vw;
 margin-left:25vw;
-margin-bottom: 17vw;
+margin-bottom: 0vw;
 background-size: cover;
 grid-area: c;
 fill: 100%;
+}
+.alphabet {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    color: #2D86B1;
+    font-size: 10vw;
 }
 .characters_title {
     margin-left:-8vw;
     color: rgb(255, 255, 255);
     margin-bottom: 5vw;
     letter-spacing: .5vw;
+    font-size: 10.4vw;
     font-variation-settings: "opsz" 72, "wght" 500, "slnt" 0;
 }
 
 /* CSS for the footer */
 footer{
     background-color: #2D86B1;
-    margin-top: 0vw;
+    padding-top: .1vw;
+}
 .footer_text {
     column-count: 2;
     vertical-align: top;
     color: white;
     font-size: 2.5vw;
     text-align: left;
-    padding: 2%; 
-    margin-left: 5vw;
+    padding: 2%;
     margin-bottom: 0vw;
 }
 .footer_title {
     column-count: 1;
     text-align: center;
     color: white;
-}}
+    font-size: 4vw;
+}
   
  /* download button section */
  .download_section {
     fill: 100%;
     background-color: white;
-    text-align: center;}
-
+    text-align: center;
+    margin: 0vw;
+}
+    
  .download {
     font-size: 6.944vw; 
     display: inline-block;
@@ -297,4 +319,3 @@ footer{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
