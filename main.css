@@ -91,7 +91,7 @@ margin-bottom: 0vw;
 .axis_description {
     margin-top: 0vw;
     margin-bottom: 15vw;
-    color: #2D86B1;
+    color: #0b3245;
 }
 #history {
     margin: 0vw;
@@ -136,7 +136,7 @@ transition: all 0.3s ease;
     margin-bottom: 0vw;
     grid-area: v;
     fill: 100%;
-    color: #2D86B1;
+    color: #134b68;
     font-variation-settings: "opsz" 52, "wght" 400, "slnt" -4;}
 .forma_container {
    font-size: 8.681vw;
@@ -206,7 +206,7 @@ transition: all 0.3s ease;
 letter-spacing: 0.1vw;
 margin-top: 10vw;
 margin-left:25vw;
-margin-bottom: 2vw;
+margin-bottom: 5vw;
 background-size: cover;
 grid-area: c;
 fill: 100%;
@@ -214,7 +214,7 @@ fill: 100%;
 .alphabet {
     margin-top: 0vw;
     margin-bottom: 0vw;
-    color: #2D86B1;
+    color: #1e6386;
     font-size: 4vw;
     overflow-wrap: break-word;
     width: 60vw;
@@ -222,7 +222,7 @@ fill: 100%;
 .characters_title {
     margin-left:-8vw;
     color: rgb(255, 255, 255);
-    margin-bottom: 2vw;
+    margin-bottom: 3.5vw;
     letter-spacing: .5vw;
     font-size: 10.4vw;
     font-variation-settings: "opsz" 72, "wght" 500, "slnt" 0;
@@ -234,7 +234,7 @@ fill: 100%;
 
 /* CSS for the footer */
 footer{
-    background-color: #2D86B1;
+    background-color: #1c5f81;
     padding-top: 2vw;
     text-align: center;
     color:white;
@@ -296,7 +296,7 @@ footer a {
 
 .slant {
     animation: slantChange 3s infinite;
-    color: #236F95;
+    color: #0b3245;
     margin: 0%;
     padding: 0%;
     margin-right:20vw;
@@ -327,7 +327,7 @@ footer a {
     }
 .optical_size {
     animation: optical-sizeChange 3s infinite;
-    color: #236F95;
+    color: #0b3245;
     margin-right:5vw;
     margin-top: 0%;
     margin-bottom: 0%;
