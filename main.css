@@ -63,6 +63,12 @@ grid-template-areas:
     "c";
 }
 
+.djr_title {
+    font-size: 7vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+}
+
 #hero_section {
 text-align: left;
 margin-left: 4vw;
@@ -112,11 +118,11 @@ transition: all 0.3s ease;
 
 .history_title_2 {
     margin-bottom: -1vw;
-    margin-top: -8.2vw;
+    margin-top: -8vw;
     margin-right: 0vw;
     margin-left: -1vw;
     transition: all 0.3s ease;
-    color: #2D86B1;
+    color: #4d8bab;
     }
 
 .history_text {
@@ -125,9 +131,6 @@ transition: all 0.3s ease;
     margin-left: 2.5vw;
 }
 
-.forma_container:hover{
-
-}
 #Variations{
     font-size: 7vw;
     letter-spacing: 0.1vw;
