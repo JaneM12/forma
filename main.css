@@ -133,6 +133,15 @@ transition: all 0.3s ease;
     line-height: 2.5vw;
 }
 
+.history_description {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    color: #0b3245;
+    font-size: 2.5vw;
+    font-variation-settings: "opsz" 10, "wght" 600, "slnt" -13;
+    transition: all 0.3s ease;
+}
+
 #Variations{
     font-size: 7vw;
     letter-spacing: 0.1vw;
@@ -209,7 +218,7 @@ transition: all 0.3s ease;
 
 #characters {
 letter-spacing: 0.1vw;
-margin-top: 5vw;
+margin-top: 8vw;
 margin-left:25vw;
 margin-bottom: 5vw;
 background-size: cover;
