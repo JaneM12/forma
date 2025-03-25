@@ -122,6 +122,7 @@ transition: all 0.3s ease;
     margin-right: 0vw;
     margin-left: -1vw;
     transition: all 0.3s ease;
+    font-variation-settings: "opsz" 43, "wght" 900, "slnt" 0;
     color: #4d8bab;
     }
 
