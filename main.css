@@ -127,8 +127,10 @@ transition: all 0.3s ease;
 
 .history_text {
     column-count: 2;
+    column-gap: 4vw;
     margin-right: 2.5vw;
     margin-left: 2.5vw;
+    line-height: 2.5vw;
 }
 
 #Variations{
